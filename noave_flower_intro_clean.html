@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOAVE</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Georgia', serif;
+            background: black;
+            color: white;
+        }
+
+        .intro {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .intro img {
+            max-width: 40%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .intro h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+        }
+
+        .intro button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .intro button:hover {
+            background: white;
+            color: black;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <img src="flower_clean.png" alt="NOAVE Flower">
+        <h1>NOAVE</h1>
+        <button onclick="enterSite()">Explore Collections</button>
+    </div>
+
+    <script>
+        function enterSite() {
+            window.location.href = "noave_collections.html";
+        }
+    </script>
+</body>
+</html>

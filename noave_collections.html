@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOAVE — Collections</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: #0d0d0d;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+        }
+
+        .collections {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .collection {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .collection:hover {
+            transform: translateY(-5px);
+        }
+
+        .collection img {
+            width: 100%;
+            height: auto;
+        }
+
+        .collection h2 {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        .collection a {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            color: white;
+            border: 1px solid white;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .collection a:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>NOAVE Collections</h1>
+    <div class="collections">
+        <div class="collection">
+            <img src="blooma.jpg" alt="BLOOMA">
+            <h2>BLOOMA</h2>
+            <a href="#">View</a>
+        </div>
+        <div class="collection">
+            <img src="lunara.jpg" alt="LUNARA">
+            <h2>LUNARA</h2>
+            <a href="#">View</a>
+        </div>
+        <div class="collection">
+            <img src="geolux.jpg" alt="GEOLUX">
+            <h2>GEOLUX</h2>
+            <a href="#">View</a>
+        </div>
+    </div>
+</body>
+</html>
